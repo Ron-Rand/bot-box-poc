@@ -1,0 +1,12 @@
+$ORIGIN example.com.
+@   3600 IN SOA ns1.example.com. admin.example.com. (
+            2026081401 ; serial
+            7200       ; refresh (2 hours)
+            3600       ; retry (1 hour)
+            1209600    ; expire (2 weeks)
+            3600       ; minimum (1 hour)
+            )
+    3600 IN NS ns1.example.com.
+ns1 3600 IN A 10.5.0.10
+www 3600 IN A 10.5.0.100
+mail 3600 IN A 10.5.0.101

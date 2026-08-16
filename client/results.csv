@@ -1,0 +1,762 @@
+timestamp,scenario,success,rtt_ms
+0.0,1. Baseline,True,22.76
+0.066,1. Baseline,True,27.02
+0.13,1. Baseline,True,24.27
+0.231,1. Baseline,True,25.67
+0.293,1. Baseline,True,51.97
+0.379,1. Baseline,True,28.73
+0.448,1. Baseline,True,38.65
+0.522,1. Baseline,True,24.78
+0.581,1. Baseline,True,24.38
+0.64,1. Baseline,True,26.13
+0.705,1. Baseline,True,34.73
+0.778,1. Baseline,True,26.06
+0.853,1. Baseline,True,24.11
+0.917,1. Baseline,True,29.25
+0.982,1. Baseline,True,24.64
+1.043,1. Baseline,True,24.59
+1.109,1. Baseline,True,27.11
+1.174,1. Baseline,True,56.8
+1.267,1. Baseline,True,30.39
+1.331,1. Baseline,True,24.45
+1.391,1. Baseline,True,38.07
+1.465,1. Baseline,True,19.98
+1.526,1. Baseline,True,23.45
+1.59,1. Baseline,True,26.18
+1.651,1. Baseline,True,26.72
+1.717,1. Baseline,True,37.1
+1.792,1. Baseline,True,29.54
+1.857,1. Baseline,True,27.96
+1.92,1. Baseline,True,36.75
+1.993,1. Baseline,True,20.85
+2.054,1. Baseline,True,20.86
+2.109,1. Baseline,True,19.01
+2.162,1. Baseline,True,19.58
+2.216,1. Baseline,True,19.2
+2.273,1. Baseline,True,22.92
+2.335,1. Baseline,True,18.74
+2.391,1. Baseline,True,22.3
+2.455,1. Baseline,True,23.82
+2.513,1. Baseline,True,26.39
+2.574,1. Baseline,True,19.9
+2.628,1. Baseline,True,18.95
+2.69,1. Baseline,True,25.23
+2.754,1. Baseline,True,30.2
+2.842,1. Baseline,True,26.86
+2.906,1. Baseline,True,26.57
+2.967,1. Baseline,True,24.91
+3.048,1. Baseline,True,22.06
+3.106,1. Baseline,True,21.16
+3.164,1. Baseline,True,22.13
+3.226,1. Baseline,True,20.88
+3.287,1. Baseline,True,22.64
+3.35,1. Baseline,True,31.56
+3.416,1. Baseline,True,30.55
+3.482,1. Baseline,True,26.69
+3.543,1. Baseline,True,32.23
+3.615,1. Baseline,True,26.57
+3.68,1. Baseline,True,83.52
+3.804,1. Baseline,True,28.8
+3.867,1. Baseline,True,20.19
+3.927,1. Baseline,True,30.0
+3.991,1. Baseline,True,28.31
+4.078,1. Baseline,True,31.53
+4.144,1. Baseline,True,45.21
+4.223,1. Baseline,True,33.47
+4.294,1. Baseline,True,35.6
+4.364,1. Baseline,True,30.48
+4.433,1. Baseline,True,27.85
+4.496,1. Baseline,True,30.66
+4.561,1. Baseline,True,26.92
+4.643,1. Baseline,True,26.93
+4.714,1. Baseline,True,27.94
+4.776,1. Baseline,True,27.3
+4.838,1. Baseline,True,25.38
+4.901,1. Baseline,True,29.7
+4.965,1. Baseline,True,47.37
+5.046,1. Baseline,True,22.16
+5.111,1. Baseline,True,19.95
+5.165,1. Baseline,True,23.69
+5.224,1. Baseline,True,21.69
+5.295,1. Baseline,True,23.02
+5.355,1. Baseline,True,18.9
+5.409,1. Baseline,True,26.07
+5.478,1. Baseline,True,20.29
+5.54,1. Baseline,True,19.86
+5.594,1. Baseline,True,25.51
+5.657,1. Baseline,True,26.54
+5.721,1. Baseline,True,24.3
+5.797,1. Baseline,True,84.98
+5.941,1. Baseline,True,31.04
+6.007,1. Baseline,True,26.88
+6.068,1. Baseline,True,19.93
+6.122,1. Baseline,True,20.04
+6.176,1. Baseline,True,29.4
+6.239,1. Baseline,True,33.81
+6.321,1. Baseline,True,21.36
+6.376,1. Baseline,True,24.62
+6.436,1. Baseline,True,29.13
+6.503,1. Baseline,True,30.73
+6.568,1. Baseline,True,34.71
+6.641,1. Baseline,True,29.07
+6.706,1. Baseline,True,29.83
+6.772,1. Baseline,True,40.87
+6.847,1. Baseline,True,30.03
+6.914,1. Baseline,True,26.82
+6.976,1. Baseline,True,29.25
+7.039,1. Baseline,True,18.26
+7.097,1. Baseline,True,20.18
+7.151,1. Baseline,True,18.47
+7.204,1. Baseline,True,19.76
+7.26,1. Baseline,True,22.84
+7.318,1. Baseline,True,25.77
+7.379,1. Baseline,True,25.83
+7.443,1. Baseline,True,28.99
+7.506,1. Baseline,True,30.86
+7.572,1. Baseline,True,23.84
+7.63,1. Baseline,True,23.31
+7.688,1. Baseline,True,19.38
+7.742,1. Baseline,True,22.65
+7.799,1. Baseline,True,21.04
+7.855,1. Baseline,True,23.67
+7.918,1. Baseline,True,25.33
+8.002,1. Baseline,True,27.61
+8.071,1. Baseline,True,28.74
+8.142,1. Baseline,True,29.87
+8.215,1. Baseline,True,26.67
+8.282,1. Baseline,True,67.19
+8.384,1. Baseline,True,27.85
+8.447,1. Baseline,True,28.48
+8.513,1. Baseline,True,25.78
+8.581,1. Baseline,True,27.91
+8.651,1. Baseline,True,28.29
+8.719,1. Baseline,True,28.42
+8.782,1. Baseline,True,34.29
+8.85,1. Baseline,True,27.46
+8.923,1. Baseline,True,34.69
+8.993,1. Baseline,True,37.02
+9.074,1. Baseline,True,31.26
+9.143,1. Baseline,True,24.41
+9.202,1. Baseline,True,20.03
+9.256,1. Baseline,True,18.37
+9.309,1. Baseline,True,27.43
+9.371,1. Baseline,True,27.37
+9.435,1. Baseline,True,29.91
+9.501,1. Baseline,True,27.32
+9.582,1. Baseline,True,31.96
+9.653,1. Baseline,True,38.86
+9.727,1. Baseline,True,29.2
+9.791,1. Baseline,True,25.55
+9.851,1. Baseline,True,20.1
+9.906,1. Baseline,True,17.81
+9.959,1. Baseline,True,23.09
+10.017,1. Baseline,True,18.9
+10.07,1. Baseline,True,24.67
+10.128,1. Baseline,True,19.86
+10.187,1. Baseline,True,23.22
+10.251,1. Baseline,True,18.56
+10.305,1. Baseline,True,18.29
+10.357,1. Baseline,True,22.95
+10.42,1. Baseline,True,33.17
+10.497,1. Baseline,True,27.03
+10.561,1. Baseline,True,26.16
+10.624,1. Baseline,True,28.25
+10.688,1. Baseline,True,30.8
+10.764,1. Baseline,True,26.81
+10.824,1. Baseline,True,30.98
+10.889,1. Baseline,True,28.0
+10.964,1. Baseline,True,32.51
+11.04,1. Baseline,True,28.66
+11.106,1. Baseline,True,35.3
+11.176,1. Baseline,True,32.17
+11.253,1. Baseline,True,49.37
+11.337,1. Baseline,True,26.06
+11.397,1. Baseline,True,26.12
+11.458,1. Baseline,True,23.97
+11.517,1. Baseline,True,25.13
+11.582,1. Baseline,True,25.52
+11.648,1. Baseline,True,27.58
+11.714,1. Baseline,True,25.84
+11.773,1. Baseline,True,25.54
+11.833,1. Baseline,True,30.4
+11.898,1. Baseline,True,29.15
+11.962,1. Baseline,True,30.58
+12.037,1. Baseline,True,25.18
+12.116,1. Baseline,True,31.0
+12.187,1. Baseline,True,29.97
+12.251,1. Baseline,True,24.48
+12.31,1. Baseline,True,28.18
+12.374,1. Baseline,True,22.82
+12.431,1. Baseline,True,26.06
+12.494,1. Baseline,True,26.36
+12.559,1. Baseline,True,23.95
+12.622,1. Baseline,True,24.65
+12.687,1. Baseline,True,22.96
+12.748,1. Baseline,True,21.95
+12.808,1. Baseline,True,24.43
+12.873,1. Baseline,True,34.35
+12.943,1. Baseline,True,25.34
+13.004,1. Baseline,True,30.99
+13.07,1. Baseline,True,26.52
+13.135,1. Baseline,True,26.93
+13.197,1. Baseline,True,27.08
+13.262,1. Baseline,True,27.47
+13.327,1. Baseline,True,30.81
+13.394,1. Baseline,True,43.13
+13.475,1. Baseline,True,27.49
+13.538,1. Baseline,True,25.32
+13.649,1. Baseline,True,43.55
+13.727,1. Baseline,True,47.88
+13.81,1. Baseline,True,25.76
+13.872,1. Baseline,True,28.43
+13.935,1. Baseline,True,27.79
+13.998,1. Baseline,True,31.6
+14.069,1. Baseline,True,28.58
+14.132,1. Baseline,True,23.76
+14.198,1. Baseline,True,35.07
+14.267,1. Baseline,True,28.73
+14.331,1. Baseline,True,22.35
+14.391,1. Baseline,True,25.42
+14.451,1. Baseline,True,19.78
+14.56,1. Baseline,True,24.73
+14.62,1. Baseline,True,30.89
+14.685,1. Baseline,True,22.65
+14.744,1. Baseline,True,24.99
+14.804,1. Baseline,True,28.77
+14.867,1. Baseline,True,25.31
+14.927,1. Baseline,True,24.71
+14.987,1. Baseline,True,31.09
+15.052,1. Baseline,True,26.87
+15.113,1. Baseline,True,133.27
+15.281,1. Baseline,True,23.61
+15.34,1. Baseline,True,36.49
+15.412,1. Baseline,True,25.99
+15.472,1. Baseline,True,23.73
+15.53,1. Baseline,True,24.35
+15.589,1. Baseline,True,23.75
+15.647,1. Baseline,True,20.3
+15.702,1. Baseline,True,18.5
+15.754,1. Baseline,True,20.27
+15.809,1. Baseline,True,20.38
+15.864,1. Baseline,True,19.09
+15.917,1. Baseline,True,20.26
+15.972,1. Baseline,True,18.91
+16.025,1. Baseline,True,18.52
+16.079,1. Baseline,True,26.45
+16.14,1. Baseline,True,23.04
+16.201,1. Baseline,True,27.6
+16.263,1. Baseline,True,31.97
+16.329,1. Baseline,True,30.06
+16.394,1. Baseline,True,24.57
+16.457,1. Baseline,True,33.85
+16.528,1. Baseline,True,32.91
+16.599,1. Baseline,True,23.65
+16.659,1. Baseline,True,28.78
+16.737,1. Baseline,True,39.21
+16.81,1. Baseline,True,19.76
+16.865,1. Baseline,True,22.33
+16.922,1. Baseline,True,30.33
+16.989,1. Baseline,True,22.83
+17.047,1. Baseline,True,21.64
+17.109,1. Baseline,True,25.97
+17.173,1. Baseline,True,61.81
+17.282,1. Baseline,True,94.0
+17.412,1. Baseline,True,28.33
+17.475,1. Baseline,True,21.62
+17.532,1. Baseline,True,20.88
+17.591,1. Baseline,True,25.61
+17.65,1. Baseline,True,25.66
+17.711,1. Baseline,True,25.25
+17.771,1. Baseline,True,26.44
+17.832,1. Baseline,True,28.02
+17.895,1. Baseline,True,30.74
+17.964,1. Baseline,True,22.14
+18.028,1. Baseline,True,16.74
+18.08,1. Baseline,True,22.73
+18.141,1. Baseline,True,17.74
+18.206,1. Baseline,True,24.01
+18.273,1. Baseline,True,18.09
+18.329,1. Baseline,True,22.66
+18.392,1. Baseline,True,18.36
+18.444,1. Baseline,True,20.61
+18.499,1. Baseline,True,25.85
+18.56,1. Baseline,True,26.76
+18.63,1. Baseline,True,26.53
+18.691,1. Baseline,True,25.14
+18.751,1. Baseline,True,26.66
+18.813,1. Baseline,True,26.67
+18.879,1. Baseline,True,24.15
+18.939,1. Baseline,True,23.84
+18.997,1. Baseline,True,30.79
+19.062,1. Baseline,True,25.34
+19.123,1. Baseline,True,28.8
+19.19,1. Baseline,True,26.42
+19.251,1. Baseline,True,26.57
+19.312,1. Baseline,True,26.7
+19.374,1. Baseline,True,25.43
+19.434,1. Baseline,True,25.93
+19.494,1. Baseline,True,23.22
+19.554,1. Baseline,True,21.23
+19.609,1. Baseline,True,27.05
+19.671,1. Baseline,True,29.07
+19.735,1. Baseline,True,31.74
+19.802,1. Baseline,True,22.63
+19.875,1. Baseline,True,30.23
+19.962,1. Baseline,True,28.58
+0.0,2. Attack (No BOR-BOX),False,250.0
+0.284,2. Attack (No BOR-BOX),False,250.0
+0.571,2. Attack (No BOR-BOX),True,0.25
+0.605,2. Attack (No BOR-BOX),False,250.0
+0.889,2. Attack (No BOR-BOX),False,250.0
+1.174,2. Attack (No BOR-BOX),True,234.26
+1.442,2. Attack (No BOR-BOX),False,250.0
+1.727,2. Attack (No BOR-BOX),True,239.67
+2.0,2. Attack (No BOR-BOX),False,250.0
+2.285,2. Attack (No BOR-BOX),False,250.0
+2.57,2. Attack (No BOR-BOX),True,245.09
+2.849,2. Attack (No BOR-BOX),True,242.77
+3.125,2. Attack (No BOR-BOX),False,250.0
+3.409,2. Attack (No BOR-BOX),False,250.0
+3.694,2. Attack (No BOR-BOX),False,250.0
+3.979,2. Attack (No BOR-BOX),False,250.0
+4.263,2. Attack (No BOR-BOX),False,250.0
+4.548,2. Attack (No BOR-BOX),False,250.0
+4.833,2. Attack (No BOR-BOX),False,250.0
+5.117,2. Attack (No BOR-BOX),False,250.0
+5.402,2. Attack (No BOR-BOX),True,232.43
+5.668,2. Attack (No BOR-BOX),False,250.0
+5.952,2. Attack (No BOR-BOX),False,250.0
+6.236,2. Attack (No BOR-BOX),False,250.0
+6.521,2. Attack (No BOR-BOX),False,250.0
+6.806,2. Attack (No BOR-BOX),True,245.72
+7.085,2. Attack (No BOR-BOX),False,250.0
+7.37,2. Attack (No BOR-BOX),False,250.0
+7.655,2. Attack (No BOR-BOX),False,250.0
+7.939,2. Attack (No BOR-BOX),True,248.13
+8.221,2. Attack (No BOR-BOX),False,250.0
+9.128,2. Attack (No BOR-BOX),True,143.18
+9.305,2. Attack (No BOR-BOX),False,250.0
+9.589,2. Attack (No BOR-BOX),True,244.37
+9.867,2. Attack (No BOR-BOX),False,250.0
+10.153,2. Attack (No BOR-BOX),False,250.0
+10.437,2. Attack (No BOR-BOX),True,232.83
+10.704,2. Attack (No BOR-BOX),False,250.0
+10.99,2. Attack (No BOR-BOX),False,250.0
+11.276,2. Attack (No BOR-BOX),True,0.22
+11.31,2. Attack (No BOR-BOX),True,202.5
+11.546,2. Attack (No BOR-BOX),False,250.0
+11.831,2. Attack (No BOR-BOX),True,236.52
+12.101,2. Attack (No BOR-BOX),False,250.0
+12.385,2. Attack (No BOR-BOX),True,0.29
+12.42,2. Attack (No BOR-BOX),True,194.96
+12.651,2. Attack (No BOR-BOX),False,250.0
+12.937,2. Attack (No BOR-BOX),False,250.0
+13.222,2. Attack (No BOR-BOX),False,250.0
+13.507,2. Attack (No BOR-BOX),False,250.0
+13.792,2. Attack (No BOR-BOX),False,250.0
+14.078,2. Attack (No BOR-BOX),False,250.0
+14.364,2. Attack (No BOR-BOX),False,250.0
+14.654,2. Attack (No BOR-BOX),True,228.89
+14.916,2. Attack (No BOR-BOX),False,250.0
+15.2,2. Attack (No BOR-BOX),False,250.0
+15.485,2. Attack (No BOR-BOX),False,250.0
+15.77,2. Attack (No BOR-BOX),True,235.88
+16.04,2. Attack (No BOR-BOX),False,250.0
+16.324,2. Attack (No BOR-BOX),False,250.0
+16.609,2. Attack (No BOR-BOX),True,243.74
+16.886,2. Attack (No BOR-BOX),True,240.57
+17.161,2. Attack (No BOR-BOX),True,242.08
+17.437,2. Attack (No BOR-BOX),False,250.0
+17.722,2. Attack (No BOR-BOX),False,250.0
+18.007,2. Attack (No BOR-BOX),True,234.0
+18.278,2. Attack (No BOR-BOX),False,250.0
+18.563,2. Attack (No BOR-BOX),True,235.48
+18.832,2. Attack (No BOR-BOX),False,250.0
+19.118,2. Attack (No BOR-BOX),True,48.29
+19.2,2. Attack (No BOR-BOX),False,250.0
+19.485,2. Attack (No BOR-BOX),True,160.43
+19.679,2. Attack (No BOR-BOX),False,250.0
+19.963,2. Attack (No BOR-BOX),True,51.05
+0.0,3. Attack (BOR-BOX Active),True,18.86
+0.052,3. Attack (BOR-BOX Active),True,17.71
+0.104,3. Attack (BOR-BOX Active),True,21.53
+0.159,3. Attack (BOR-BOX Active),True,22.46
+0.215,3. Attack (BOR-BOX Active),True,20.76
+0.27,3. Attack (BOR-BOX Active),True,17.7
+0.322,3. Attack (BOR-BOX Active),True,17.59
+0.373,3. Attack (BOR-BOX Active),True,17.65
+0.424,3. Attack (BOR-BOX Active),True,17.83
+0.476,3. Attack (BOR-BOX Active),True,21.28
+0.531,3. Attack (BOR-BOX Active),True,18.09
+0.583,3. Attack (BOR-BOX Active),True,18.44
+0.635,3. Attack (BOR-BOX Active),True,18.07
+0.686,3. Attack (BOR-BOX Active),True,17.83
+0.738,3. Attack (BOR-BOX Active),True,17.62
+0.789,3. Attack (BOR-BOX Active),True,17.5
+0.841,3. Attack (BOR-BOX Active),True,17.36
+0.892,3. Attack (BOR-BOX Active),True,18.33
+0.944,3. Attack (BOR-BOX Active),True,18.86
+0.997,3. Attack (BOR-BOX Active),True,17.48
+1.048,3. Attack (BOR-BOX Active),True,17.43
+1.099,3. Attack (BOR-BOX Active),True,16.94
+1.15,3. Attack (BOR-BOX Active),True,18.22
+1.202,3. Attack (BOR-BOX Active),True,18.55
+1.254,3. Attack (BOR-BOX Active),True,17.74
+1.307,3. Attack (BOR-BOX Active),True,18.51
+1.359,3. Attack (BOR-BOX Active),True,20.25
+1.413,3. Attack (BOR-BOX Active),True,18.14
+1.465,3. Attack (BOR-BOX Active),True,18.9
+1.518,3. Attack (BOR-BOX Active),True,18.08
+1.569,3. Attack (BOR-BOX Active),True,17.77
+1.621,3. Attack (BOR-BOX Active),True,17.63
+1.672,3. Attack (BOR-BOX Active),True,17.41
+1.723,3. Attack (BOR-BOX Active),True,16.92
+1.774,3. Attack (BOR-BOX Active),True,17.19
+1.825,3. Attack (BOR-BOX Active),True,18.1
+1.877,3. Attack (BOR-BOX Active),True,17.82
+1.929,3. Attack (BOR-BOX Active),True,19.19
+1.981,3. Attack (BOR-BOX Active),True,16.76
+2.032,3. Attack (BOR-BOX Active),True,18.02
+2.084,3. Attack (BOR-BOX Active),True,18.07
+2.136,3. Attack (BOR-BOX Active),True,17.76
+2.187,3. Attack (BOR-BOX Active),True,18.43
+2.239,3. Attack (BOR-BOX Active),True,17.16
+2.29,3. Attack (BOR-BOX Active),True,18.56
+2.343,3. Attack (BOR-BOX Active),True,21.15
+2.398,3. Attack (BOR-BOX Active),True,17.29
+2.449,3. Attack (BOR-BOX Active),True,18.06
+2.5,3. Attack (BOR-BOX Active),True,20.85
+2.555,3. Attack (BOR-BOX Active),True,18.19
+2.607,3. Attack (BOR-BOX Active),True,18.26
+2.659,3. Attack (BOR-BOX Active),True,18.08
+2.711,3. Attack (BOR-BOX Active),True,18.41
+2.763,3. Attack (BOR-BOX Active),True,19.1
+2.816,3. Attack (BOR-BOX Active),True,17.91
+2.867,3. Attack (BOR-BOX Active),True,17.52
+2.919,3. Attack (BOR-BOX Active),True,19.34
+2.972,3. Attack (BOR-BOX Active),True,18.31
+3.024,3. Attack (BOR-BOX Active),True,18.47
+3.076,3. Attack (BOR-BOX Active),True,18.52
+3.129,3. Attack (BOR-BOX Active),True,19.4
+3.182,3. Attack (BOR-BOX Active),True,18.17
+3.234,3. Attack (BOR-BOX Active),True,19.24
+3.287,3. Attack (BOR-BOX Active),True,19.35
+3.34,3. Attack (BOR-BOX Active),True,18.43
+3.392,3. Attack (BOR-BOX Active),True,18.05
+3.444,3. Attack (BOR-BOX Active),True,17.8
+3.496,3. Attack (BOR-BOX Active),True,18.26
+3.548,3. Attack (BOR-BOX Active),True,18.36
+3.6,3. Attack (BOR-BOX Active),True,19.22
+3.653,3. Attack (BOR-BOX Active),True,17.67
+3.704,3. Attack (BOR-BOX Active),True,17.75
+3.756,3. Attack (BOR-BOX Active),True,30.47
+3.82,3. Attack (BOR-BOX Active),True,20.08
+3.874,3. Attack (BOR-BOX Active),True,20.02
+3.927,3. Attack (BOR-BOX Active),True,20.6
+3.982,3. Attack (BOR-BOX Active),True,18.22
+4.034,3. Attack (BOR-BOX Active),True,21.59
+4.089,3. Attack (BOR-BOX Active),True,19.63
+4.143,3. Attack (BOR-BOX Active),True,20.88
+4.198,3. Attack (BOR-BOX Active),True,20.23
+4.252,3. Attack (BOR-BOX Active),True,18.73
+4.305,3. Attack (BOR-BOX Active),True,18.28
+4.357,3. Attack (BOR-BOX Active),True,18.88
+4.409,3. Attack (BOR-BOX Active),True,18.1
+4.461,3. Attack (BOR-BOX Active),True,18.27
+4.513,3. Attack (BOR-BOX Active),True,18.7
+4.566,3. Attack (BOR-BOX Active),True,19.48
+4.619,3. Attack (BOR-BOX Active),True,18.35
+4.671,3. Attack (BOR-BOX Active),True,19.56
+4.724,3. Attack (BOR-BOX Active),True,17.36
+4.775,3. Attack (BOR-BOX Active),True,18.53
+4.828,3. Attack (BOR-BOX Active),True,18.39
+4.88,3. Attack (BOR-BOX Active),True,18.61
+4.932,3. Attack (BOR-BOX Active),True,17.66
+4.983,3. Attack (BOR-BOX Active),True,18.07
+5.035,3. Attack (BOR-BOX Active),True,16.67
+5.086,3. Attack (BOR-BOX Active),True,19.75
+5.14,3. Attack (BOR-BOX Active),True,17.43
+5.192,3. Attack (BOR-BOX Active),True,18.4
+5.244,3. Attack (BOR-BOX Active),True,19.99
+5.298,3. Attack (BOR-BOX Active),True,18.98
+5.35,3. Attack (BOR-BOX Active),True,18.56
+5.402,3. Attack (BOR-BOX Active),True,17.0
+5.453,3. Attack (BOR-BOX Active),True,17.42
+5.504,3. Attack (BOR-BOX Active),True,18.48
+5.556,3. Attack (BOR-BOX Active),True,17.69
+5.608,3. Attack (BOR-BOX Active),True,17.99
+5.66,3. Attack (BOR-BOX Active),True,21.03
+5.714,3. Attack (BOR-BOX Active),True,17.32
+5.765,3. Attack (BOR-BOX Active),True,18.09
+5.817,3. Attack (BOR-BOX Active),True,17.41
+5.868,3. Attack (BOR-BOX Active),True,18.21
+5.921,3. Attack (BOR-BOX Active),True,17.24
+5.972,3. Attack (BOR-BOX Active),True,17.95
+6.023,3. Attack (BOR-BOX Active),True,17.94
+6.075,3. Attack (BOR-BOX Active),True,18.07
+6.127,3. Attack (BOR-BOX Active),True,17.59
+6.178,3. Attack (BOR-BOX Active),True,20.45
+6.232,3. Attack (BOR-BOX Active),True,17.74
+6.286,3. Attack (BOR-BOX Active),True,18.0
+6.338,3. Attack (BOR-BOX Active),True,16.86
+6.389,3. Attack (BOR-BOX Active),True,19.44
+6.442,3. Attack (BOR-BOX Active),True,19.05
+6.495,3. Attack (BOR-BOX Active),True,18.14
+6.546,3. Attack (BOR-BOX Active),True,17.34
+6.598,3. Attack (BOR-BOX Active),True,17.12
+6.649,3. Attack (BOR-BOX Active),True,17.28
+6.7,3. Attack (BOR-BOX Active),True,19.28
+6.753,3. Attack (BOR-BOX Active),True,17.62
+6.804,3. Attack (BOR-BOX Active),True,19.42
+6.858,3. Attack (BOR-BOX Active),True,17.91
+6.909,3. Attack (BOR-BOX Active),True,20.19
+6.963,3. Attack (BOR-BOX Active),True,18.23
+7.015,3. Attack (BOR-BOX Active),True,17.41
+7.067,3. Attack (BOR-BOX Active),True,19.46
+7.12,3. Attack (BOR-BOX Active),True,17.77
+7.171,3. Attack (BOR-BOX Active),True,18.21
+7.223,3. Attack (BOR-BOX Active),True,22.48
+7.279,3. Attack (BOR-BOX Active),True,19.31
+7.332,3. Attack (BOR-BOX Active),True,18.5
+7.385,3. Attack (BOR-BOX Active),True,18.33
+7.437,3. Attack (BOR-BOX Active),True,21.58
+7.492,3. Attack (BOR-BOX Active),True,19.35
+7.545,3. Attack (BOR-BOX Active),True,17.92
+7.597,3. Attack (BOR-BOX Active),True,18.15
+7.648,3. Attack (BOR-BOX Active),True,17.44
+7.7,3. Attack (BOR-BOX Active),True,18.28
+7.752,3. Attack (BOR-BOX Active),True,18.52
+7.805,3. Attack (BOR-BOX Active),True,19.25
+7.858,3. Attack (BOR-BOX Active),True,18.55
+7.91,3. Attack (BOR-BOX Active),True,19.08
+7.963,3. Attack (BOR-BOX Active),True,17.69
+8.015,3. Attack (BOR-BOX Active),True,19.22
+8.067,3. Attack (BOR-BOX Active),True,22.5
+8.123,3. Attack (BOR-BOX Active),True,17.55
+8.175,3. Attack (BOR-BOX Active),True,18.37
+8.227,3. Attack (BOR-BOX Active),True,20.01
+8.281,3. Attack (BOR-BOX Active),True,18.42
+8.333,3. Attack (BOR-BOX Active),True,18.76
+8.385,3. Attack (BOR-BOX Active),True,17.77
+8.437,3. Attack (BOR-BOX Active),True,17.44
+8.488,3. Attack (BOR-BOX Active),True,19.36
+8.541,3. Attack (BOR-BOX Active),True,18.07
+8.593,3. Attack (BOR-BOX Active),True,17.25
+8.644,3. Attack (BOR-BOX Active),True,18.01
+8.695,3. Attack (BOR-BOX Active),True,18.62
+8.748,3. Attack (BOR-BOX Active),True,18.02
+8.8,3. Attack (BOR-BOX Active),True,18.41
+8.852,3. Attack (BOR-BOX Active),True,17.62
+8.903,3. Attack (BOR-BOX Active),True,18.75
+8.956,3. Attack (BOR-BOX Active),True,17.72
+9.007,3. Attack (BOR-BOX Active),True,19.71
+9.061,3. Attack (BOR-BOX Active),True,18.75
+9.113,3. Attack (BOR-BOX Active),True,17.6
+9.164,3. Attack (BOR-BOX Active),True,18.03
+9.216,3. Attack (BOR-BOX Active),True,17.85
+9.268,3. Attack (BOR-BOX Active),True,20.03
+9.321,3. Attack (BOR-BOX Active),True,17.19
+9.372,3. Attack (BOR-BOX Active),True,20.82
+9.426,3. Attack (BOR-BOX Active),True,18.27
+9.478,3. Attack (BOR-BOX Active),True,17.68
+9.53,3. Attack (BOR-BOX Active),True,18.13
+9.581,3. Attack (BOR-BOX Active),True,18.29
+9.633,3. Attack (BOR-BOX Active),True,17.77
+9.685,3. Attack (BOR-BOX Active),True,17.11
+9.736,3. Attack (BOR-BOX Active),True,19.56
+9.789,3. Attack (BOR-BOX Active),True,18.35
+9.841,3. Attack (BOR-BOX Active),True,18.55
+9.893,3. Attack (BOR-BOX Active),True,17.57
+9.944,3. Attack (BOR-BOX Active),True,17.2
+9.995,3. Attack (BOR-BOX Active),True,18.1
+10.047,3. Attack (BOR-BOX Active),True,18.66
+10.1,3. Attack (BOR-BOX Active),True,18.25
+10.152,3. Attack (BOR-BOX Active),True,17.99
+10.203,3. Attack (BOR-BOX Active),True,25.62
+10.263,3. Attack (BOR-BOX Active),True,20.32
+10.317,3. Attack (BOR-BOX Active),True,17.35
+10.368,3. Attack (BOR-BOX Active),True,18.44
+10.42,3. Attack (BOR-BOX Active),True,19.26
+10.472,3. Attack (BOR-BOX Active),True,17.67
+10.524,3. Attack (BOR-BOX Active),True,17.83
+10.576,3. Attack (BOR-BOX Active),True,18.43
+10.628,3. Attack (BOR-BOX Active),True,18.59
+10.68,3. Attack (BOR-BOX Active),True,18.35
+10.732,3. Attack (BOR-BOX Active),True,18.41
+10.784,3. Attack (BOR-BOX Active),True,17.43
+10.836,3. Attack (BOR-BOX Active),True,20.44
+10.89,3. Attack (BOR-BOX Active),True,17.4
+10.941,3. Attack (BOR-BOX Active),True,17.77
+10.993,3. Attack (BOR-BOX Active),True,20.46
+11.047,3. Attack (BOR-BOX Active),True,18.12
+11.098,3. Attack (BOR-BOX Active),True,21.44
+11.154,3. Attack (BOR-BOX Active),True,17.49
+11.205,3. Attack (BOR-BOX Active),True,23.19
+11.262,3. Attack (BOR-BOX Active),True,20.99
+11.317,3. Attack (BOR-BOX Active),True,18.1
+11.368,3. Attack (BOR-BOX Active),True,17.42
+11.42,3. Attack (BOR-BOX Active),True,18.43
+11.472,3. Attack (BOR-BOX Active),True,17.79
+11.523,3. Attack (BOR-BOX Active),True,18.85
+11.576,3. Attack (BOR-BOX Active),True,18.04
+11.628,3. Attack (BOR-BOX Active),True,17.72
+11.679,3. Attack (BOR-BOX Active),True,19.87
+11.733,3. Attack (BOR-BOX Active),True,19.7
+11.787,3. Attack (BOR-BOX Active),True,18.28
+11.838,3. Attack (BOR-BOX Active),True,18.03
+11.89,3. Attack (BOR-BOX Active),True,17.52
+11.941,3. Attack (BOR-BOX Active),True,18.94
+11.994,3. Attack (BOR-BOX Active),True,17.24
+12.045,3. Attack (BOR-BOX Active),True,18.6
+12.098,3. Attack (BOR-BOX Active),True,18.03
+12.149,3. Attack (BOR-BOX Active),True,17.4
+12.2,3. Attack (BOR-BOX Active),True,17.62
+12.252,3. Attack (BOR-BOX Active),True,20.08
+12.306,3. Attack (BOR-BOX Active),True,18.0
+12.358,3. Attack (BOR-BOX Active),True,20.58
+12.412,3. Attack (BOR-BOX Active),True,17.63
+12.463,3. Attack (BOR-BOX Active),True,17.89
+12.515,3. Attack (BOR-BOX Active),True,18.14
+12.567,3. Attack (BOR-BOX Active),True,17.58
+12.618,3. Attack (BOR-BOX Active),True,17.54
+12.669,3. Attack (BOR-BOX Active),True,17.67
+12.72,3. Attack (BOR-BOX Active),True,17.49
+12.772,3. Attack (BOR-BOX Active),True,18.67
+12.824,3. Attack (BOR-BOX Active),True,18.89
+12.877,3. Attack (BOR-BOX Active),True,17.16
+12.928,3. Attack (BOR-BOX Active),True,18.85
+12.981,3. Attack (BOR-BOX Active),True,16.91
+13.031,3. Attack (BOR-BOX Active),True,18.13
+13.083,3. Attack (BOR-BOX Active),True,18.84
+13.136,3. Attack (BOR-BOX Active),True,18.01
+13.188,3. Attack (BOR-BOX Active),True,17.83
+13.239,3. Attack (BOR-BOX Active),True,17.88
+13.291,3. Attack (BOR-BOX Active),True,17.35
+13.342,3. Attack (BOR-BOX Active),True,18.01
+13.394,3. Attack (BOR-BOX Active),True,20.44
+13.448,3. Attack (BOR-BOX Active),True,20.57
+13.503,3. Attack (BOR-BOX Active),True,17.27
+13.554,3. Attack (BOR-BOX Active),True,18.83
+13.607,3. Attack (BOR-BOX Active),True,18.66
+13.659,3. Attack (BOR-BOX Active),True,18.48
+13.711,3. Attack (BOR-BOX Active),True,17.46
+13.763,3. Attack (BOR-BOX Active),True,17.16
+13.814,3. Attack (BOR-BOX Active),True,16.98
+13.865,3. Attack (BOR-BOX Active),True,17.11
+13.916,3. Attack (BOR-BOX Active),True,18.59
+13.968,3. Attack (BOR-BOX Active),True,18.01
+14.022,3. Attack (BOR-BOX Active),True,18.7
+14.075,3. Attack (BOR-BOX Active),True,17.85
+14.127,3. Attack (BOR-BOX Active),True,21.14
+14.182,3. Attack (BOR-BOX Active),True,17.0
+14.233,3. Attack (BOR-BOX Active),True,17.67
+14.285,3. Attack (BOR-BOX Active),True,17.29
+14.336,3. Attack (BOR-BOX Active),True,18.46
+14.388,3. Attack (BOR-BOX Active),True,22.21
+14.444,3. Attack (BOR-BOX Active),True,18.15
+14.495,3. Attack (BOR-BOX Active),True,18.58
+14.548,3. Attack (BOR-BOX Active),True,17.64
+14.599,3. Attack (BOR-BOX Active),True,17.81
+14.65,3. Attack (BOR-BOX Active),True,17.15
+14.701,3. Attack (BOR-BOX Active),True,18.28
+14.753,3. Attack (BOR-BOX Active),True,17.87
+14.805,3. Attack (BOR-BOX Active),True,20.24
+14.859,3. Attack (BOR-BOX Active),True,18.18
+14.91,3. Attack (BOR-BOX Active),True,17.75
+14.962,3. Attack (BOR-BOX Active),True,17.29
+15.013,3. Attack (BOR-BOX Active),True,17.46
+15.064,3. Attack (BOR-BOX Active),True,18.54
+15.117,3. Attack (BOR-BOX Active),True,18.41
+15.169,3. Attack (BOR-BOX Active),True,18.22
+15.221,3. Attack (BOR-BOX Active),True,18.07
+15.272,3. Attack (BOR-BOX Active),True,18.7
+15.325,3. Attack (BOR-BOX Active),True,17.72
+15.376,3. Attack (BOR-BOX Active),True,18.88
+15.429,3. Attack (BOR-BOX Active),True,17.46
+15.48,3. Attack (BOR-BOX Active),True,19.35
+15.533,3. Attack (BOR-BOX Active),True,18.14
+15.585,3. Attack (BOR-BOX Active),True,18.14
+15.636,3. Attack (BOR-BOX Active),True,17.79
+15.688,3. Attack (BOR-BOX Active),True,17.85
+15.74,3. Attack (BOR-BOX Active),True,18.46
+15.792,3. Attack (BOR-BOX Active),True,18.49
+15.844,3. Attack (BOR-BOX Active),True,18.84
+15.897,3. Attack (BOR-BOX Active),True,17.68
+15.948,3. Attack (BOR-BOX Active),True,20.11
+16.002,3. Attack (BOR-BOX Active),True,18.97
+16.055,3. Attack (BOR-BOX Active),True,20.28
+16.109,3. Attack (BOR-BOX Active),True,19.82
+16.162,3. Attack (BOR-BOX Active),True,17.9
+16.214,3. Attack (BOR-BOX Active),True,17.72
+16.266,3. Attack (BOR-BOX Active),True,17.53
+16.317,3. Attack (BOR-BOX Active),True,17.81
+16.368,3. Attack (BOR-BOX Active),True,17.92
+16.42,3. Attack (BOR-BOX Active),True,19.67
+16.473,3. Attack (BOR-BOX Active),True,17.63
+16.524,3. Attack (BOR-BOX Active),True,17.96
+16.576,3. Attack (BOR-BOX Active),True,19.58
+16.629,3. Attack (BOR-BOX Active),True,18.71
+16.682,3. Attack (BOR-BOX Active),True,17.57
+16.733,3. Attack (BOR-BOX Active),True,18.84
+16.786,3. Attack (BOR-BOX Active),True,18.07
+16.837,3. Attack (BOR-BOX Active),True,18.4
+16.889,3. Attack (BOR-BOX Active),True,18.76
+16.942,3. Attack (BOR-BOX Active),True,18.0
+16.994,3. Attack (BOR-BOX Active),True,18.2
+17.046,3. Attack (BOR-BOX Active),True,19.58
+17.099,3. Attack (BOR-BOX Active),True,18.83
+17.152,3. Attack (BOR-BOX Active),True,18.22
+17.204,3. Attack (BOR-BOX Active),True,23.47
+17.261,3. Attack (BOR-BOX Active),True,17.75
+17.312,3. Attack (BOR-BOX Active),True,18.16
+17.364,3. Attack (BOR-BOX Active),True,17.65
+17.416,3. Attack (BOR-BOX Active),True,18.81
+17.468,3. Attack (BOR-BOX Active),True,18.58
+17.521,3. Attack (BOR-BOX Active),True,18.34
+17.573,3. Attack (BOR-BOX Active),True,17.66
+17.624,3. Attack (BOR-BOX Active),True,18.94
+17.677,3. Attack (BOR-BOX Active),True,19.67
+17.73,3. Attack (BOR-BOX Active),True,17.7
+17.782,3. Attack (BOR-BOX Active),True,17.51
+17.833,3. Attack (BOR-BOX Active),True,17.58
+17.885,3. Attack (BOR-BOX Active),True,17.97
+17.936,3. Attack (BOR-BOX Active),True,18.5
+17.988,3. Attack (BOR-BOX Active),True,18.17
+18.04,3. Attack (BOR-BOX Active),True,17.51
+18.092,3. Attack (BOR-BOX Active),True,18.09
+18.144,3. Attack (BOR-BOX Active),True,17.92
+18.196,3. Attack (BOR-BOX Active),True,17.87
+18.247,3. Attack (BOR-BOX Active),True,18.97
+18.3,3. Attack (BOR-BOX Active),True,19.02
+18.353,3. Attack (BOR-BOX Active),True,18.79
+18.405,3. Attack (BOR-BOX Active),True,18.71
+18.458,3. Attack (BOR-BOX Active),True,20.89
+18.512,3. Attack (BOR-BOX Active),True,17.88
+18.564,3. Attack (BOR-BOX Active),True,21.92
+18.619,3. Attack (BOR-BOX Active),True,17.57
+18.671,3. Attack (BOR-BOX Active),True,18.55
+18.723,3. Attack (BOR-BOX Active),True,20.46
+18.777,3. Attack (BOR-BOX Active),True,17.43
+18.828,3. Attack (BOR-BOX Active),True,17.76
+18.88,3. Attack (BOR-BOX Active),True,21.32
+18.935,3. Attack (BOR-BOX Active),True,18.68
+18.988,3. Attack (BOR-BOX Active),True,18.07
+19.04,3. Attack (BOR-BOX Active),True,17.73
+19.091,3. Attack (BOR-BOX Active),True,17.18
+19.142,3. Attack (BOR-BOX Active),True,19.08
+19.194,3. Attack (BOR-BOX Active),True,17.49
+19.246,3. Attack (BOR-BOX Active),True,18.81
+19.298,3. Attack (BOR-BOX Active),True,18.7
+19.35,3. Attack (BOR-BOX Active),True,18.02
+19.402,3. Attack (BOR-BOX Active),True,17.42
+19.453,3. Attack (BOR-BOX Active),True,19.04
+19.506,3. Attack (BOR-BOX Active),True,17.48
+19.557,3. Attack (BOR-BOX Active),True,17.46
+19.608,3. Attack (BOR-BOX Active),True,18.11
+19.66,3. Attack (BOR-BOX Active),True,18.22
+19.712,3. Attack (BOR-BOX Active),True,18.23
+19.764,3. Attack (BOR-BOX Active),True,17.38
+19.815,3. Attack (BOR-BOX Active),True,17.97
+19.866,3. Attack (BOR-BOX Active),True,18.19
+19.918,3. Attack (BOR-BOX Active),True,18.75
+19.971,3. Attack (BOR-BOX Active),True,18.88
