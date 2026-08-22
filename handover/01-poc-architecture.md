@@ -1,6 +1,3 @@
-================================================
-FILE: handover/01-poc-architecture.md
-================================================
 # PoC Architecture
 
 The BOR-BOX Proof of Concept utilizes a containerized micro-network to simulate a real-world DNS resolution environment under heavy attack. 
@@ -21,6 +18,10 @@ To adhere to the "Availability First" design philosophy (zero hard drops), the B
 * **High-Priority Queue:** Traffic that passes all security rules is forwarded immediately to the upstream resolver.
 * **Rate-Limited Queue:** Traffic matching malicious signatures, volumetric thresholds, or stateful similarity tracks is shunted to an asynchronous queue processed at a strict maximum of 10 QPS. 
 
-## Concurrency Limiting
+## Concurrency & Simulated Vulnerabilities
 
-To accurately simulate real-world resolver resource exhaustion, BOR-BOX implements a Global Concurrency Limiter (an `asyncio.Semaphore` capped at 20 concurrent slots). When the proxy is disabled, attack traffic instantly consumes these slots, causing legitimate client packets to time out. When the proxy is active, malicious traffic is quarantined, leaving the processing slots open for legitimate requests.
+To accurately simulate real-world resolver limits, BOR-BOX implements a Global Concurrency Limiter (an `asyncio.Semaphore` capped at 20 concurrent slots). 
+
+Additionally, the proxy's upstream forwarding logic contains a simulated backend vulnerability. If it receives a malformed packet (e.g., multiple question sections), it forces a 300ms processing lock to simulate a logic panic and CPU exhaustion. 
+
+When the proxy is disabled, attacker traffic triggers these vulnerabilities directly, consuming the concurrency slots and causing legitimate client packets to time out. When the proxy is active, malicious traffic is quarantined to the rate-limited queue, leaving the processing slots open for legitimate requests.
