@@ -10,3 +10,4 @@ $ORIGIN example.com.
 ns1 3600 IN A 10.5.0.10
 www 3600 IN A 10.5.0.100
 mail 3600 IN A 10.5.0.101
+target-banking 3600 IN A 10.5.0.100

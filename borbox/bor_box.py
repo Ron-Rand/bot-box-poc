@@ -2,6 +2,8 @@ import asyncio
 import os
 import re
 import time
+import hashlib
+from collections import deque
 import dns.message
 
 UPSTREAM_DNS = os.getenv('UPSTREAM_DNS', '10.5.0.10')
@@ -11,27 +13,24 @@ LISTEN_PORT = 53
 
 domain_counts = {}
 last_reset_time = time.time()
+recent_responses = deque(maxlen=20)
+pending_queries = {} 
 
-# Slide 11: Water Torture Regex
 WATER_TORTURE_REGEX = re.compile(r'^[a-zA-Z0-9]{8,}\.[^.]+\.[^.]+\.$')
-WHITELIST = ['www.example.com.', 'mail.example.com.']
-
-# Simulate a resolver that can only process 20 queries concurrently
-# This applies to ALL attacks (QPS Flood, Cache Poison, Water Torture)
+WHITELIST = ['www.example.com.', 'mail.example.com.', 'target-banking.example.com.']
 RESOLVER_CAPACITY = asyncio.Semaphore(20)
 
-async def forward_to_upstream(data, client_addr, client_transport):
-    # Try to acquire a processing slot in the upstream resolver
+async def forward_to_upstream(data, client_addr, client_transport, qname, txid):
     try:
-        # If we wait longer than 0.5s for a free slot, the client has already timed out
         await asyncio.wait_for(RESOLVER_CAPACITY.acquire(), timeout=0.5)
     except asyncio.TimeoutError:
-        # Resolver is completely overwhelmed (Resource Exhaustion) - Packet dropped
         return
 
     try:
-        # Simulate the base time it takes a resolver to parse and process ANY packet
         await asyncio.sleep(0.015) 
+        if qname == "target-banking.example.com.":
+            # Widened the race window to 100ms
+            await asyncio.sleep(0.100) 
         
         class UpstreamProtocol(asyncio.DatagramProtocol):
             def __init__(self):
@@ -40,7 +39,9 @@ async def forward_to_upstream(data, client_addr, client_transport):
                 self.transport = transport
                 transport.sendto(data)
             def datagram_received(self, response_data, addr):
-                client_transport.sendto(response_data, client_addr)
+                if txid in pending_queries:
+                    client_transport.sendto(response_data, client_addr)
+                    del pending_queries[txid]
                 self.transport.close()
             def error_received(self, exc):
                 pass
@@ -54,15 +55,21 @@ async def forward_to_upstream(data, client_addr, client_transport):
         except Exception:
             pass
     finally:
-        # Always release the slot when done
         RESOLVER_CAPACITY.release()
 
 async def rate_limited_worker(queue):
     while True:
-        data, addr, client_transport = await queue.get()
-        await forward_to_upstream(data, addr, client_transport)
+        data, addr, client_transport, qname, txid = await queue.get()
+        try:
+            msg = dns.message.from_wire(data)
+            is_response = (msg.flags & 0x8000) != 0
+        except:
+            is_response = False
+        
+        if not is_response:
+            await forward_to_upstream(data, addr, client_transport, qname, txid)
         queue.task_done()
-        await asyncio.sleep(0.1)  # Strict rate limit: 10 QPS max for all flagged traffic
+        await asyncio.sleep(0.1)  
 
 class BorBoxProtocol(asyncio.DatagramProtocol):
     def __init__(self, rate_limited_queue):
@@ -72,42 +79,69 @@ class BorBoxProtocol(asyncio.DatagramProtocol):
         self.transport = transport
 
     def datagram_received(self, data, addr):
-        global domain_counts, last_reset_time
+        global domain_counts, last_reset_time, recent_responses, pending_queries
         
-        if not BORBOX_ENABLED:
-            # Passthrough Mode: Attacker instantly consumes all 20 RESOLVER_CAPACITY slots
-            asyncio.create_task(forward_to_upstream(data, addr, self.transport))
-            return
-
         try:
             msg = dns.message.from_wire(data)
-            qname = str(msg.question[0].name)
+            qname = str(msg.question[0].name) if msg.question else ""
+            is_response = (msg.flags & 0x8000) != 0
+            txid = msg.id
         except Exception:
             qname = ""
+            is_response = False
+            txid = None
 
-        current_time = time.time()
-        if current_time - last_reset_time > 1.0:
-            domain_counts.clear()
-            last_reset_time = current_time
+        if not BORBOX_ENABLED:
+            if is_response:
+                if txid in pending_queries:
+                    c_addr, c_trans = pending_queries[txid]
+                    c_trans.sendto(data, c_addr)
+                    del pending_queries[txid]
+                return
+            else:
+                if txid is not None:
+                    pending_queries[txid] = (addr, self.transport)
+                asyncio.create_task(forward_to_upstream(data, addr, self.transport, qname, txid))
+                return
 
-        domain_counts[qname] = domain_counts.get(qname, 0) + 1
         limit = False
+        if is_response:
+            payload_hash = hashlib.sha256(data[2:]).hexdigest()
+            recent_responses.append(payload_hash)
+            
+            match_count = sum(1 for h in recent_responses if h == payload_hash)
+            if match_count >= 5:
+                limit = True
+                
+            if not limit and txid in pending_queries:
+                c_addr, c_trans = pending_queries[txid]
+                c_trans.sendto(data, c_addr)
+                del pending_queries[txid]
+        else:
+            current_time = time.time()
+            if current_time - last_reset_time > 1.0:
+                domain_counts.clear()
+                last_reset_time = current_time
 
-        if bool(WATER_TORTURE_REGEX.match(qname)):
-            limit = True
-        elif qname in WHITELIST:
-            limit = False
-        elif domain_counts[qname] > 10:
-            limit = True
+            domain_counts[qname] = domain_counts.get(qname, 0) + 1
+
+            if qname in WHITELIST:
+                limit = False
+            elif bool(WATER_TORTURE_REGEX.match(qname)):
+                limit = True
+            elif domain_counts[qname] > 10:
+                limit = True
+
+            if txid is not None:
+                pending_queries[txid] = (addr, self.transport)
 
         if limit:
             try:
-                self.rate_limited_queue.put_nowait((data, addr, self.transport))
+                self.rate_limited_queue.put_nowait((data, addr, self.transport, qname, txid))
             except asyncio.QueueFull:
                 pass
-        else:
-            # High-priority queue (direct fast-path)
-            asyncio.create_task(forward_to_upstream(data, addr, self.transport))
+        elif not is_response:
+            asyncio.create_task(forward_to_upstream(data, addr, self.transport, qname, txid))
 
 async def main():
     loop = asyncio.get_running_loop()
