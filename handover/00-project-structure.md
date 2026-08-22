@@ -1,6 +1,9 @@
+================================================
+FILE: handover/00-project-structure.md
+================================================
 # BOR-BOX PoC: Project Structure
 
-This directory contains the Proof of Concept (PoC) environment for BOR-BOX, a DNS security middlebox designed to protect recursive resolvers from resource exhaustion.
+This directory contains the Proof of Concept (PoC) environment for BOR-BOX, a DNS security middlebox designed to protect recursive resolvers from resource exhaustion and cache poisoning.
 
 ## Directory Layout
 
@@ -9,9 +12,9 @@ This directory contains the Proof of Concept (PoC) environment for BOR-BOX, a DN
 * `coredns/Corefile`
   Configuration file mapping the CoreDNS routing rules.
 * `coredns/example.com.db`
-  The authoritative zone file defining the legitimate, whitelisted subdomains for the PoC.
+  The authoritative zone file defining the legitimate, whitelisted subdomains and the target baseline IPs for the PoC.
 * `borbox/bor_box.py`
-  The core Python proxy implementing the dual-queue architecture and stateful mitigation rules.
+  The core Python proxy implementing the dual-queue architecture, regex filters, and the stateful similarity tracker.
 * `borbox/requirements.txt`
   Dependencies for the proxy (`dnspython`).
 * `attacker/attacker.py`
@@ -19,7 +22,7 @@ This directory contains the Proof of Concept (PoC) environment for BOR-BOX, a DN
 * `attacker/requirements.txt`
   Dependencies for the attack scripts (`scapy`, `dnspython`).
 * `client/benchmark.py`
-  The automated testing suite that simulates legitimate traffic, records latency/timeouts, and generates matplotlib charts.
+  The automated testing suite that simulates legitimate traffic, evaluates cache integrity, and generates matplotlib charts.
 * `client/requirements.txt`
   Dependencies for the benchmarking client (`dnspython`, `matplotlib`, `pandas`).
 * `client/charts/`

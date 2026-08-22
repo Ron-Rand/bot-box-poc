@@ -1,3 +1,6 @@
+================================================
+FILE: handover/02-attack-scenarios.md
+================================================
 # Attack Scenarios & Mitigations
 
 The BOR-BOX PoC evaluates defensive performance against three specific DNS attack vectors grounded in recent academic literature.
@@ -13,6 +16,6 @@ The BOR-BOX PoC evaluates defensive performance against three specific DNS attac
 * **The Mitigation:** A compiled deterministic finite automaton (DFA) identifies subdomains with 8+ alphanumeric characters. Matches are instantly routed to the rate-limited queue.
 
 ## 3. Rapid Cache Poisoning Guessing Race
-* **The Attack:** An off-path attacker rapidly floods the resolver with spoofed responses or transaction ID guesses targeting a specific, high-value domain.
-* **The Rule:** Domain Request Density Rule.
-* **The Mitigation:** If query velocity for a specific zone exceeds 10 queries within a 1-second rolling window, subsequent queries for that domain are rate-limited to protect the lookup buffers.
+* **The Attack:** An off-path attacker floods the resolver with spoofed responses targeting a specific query, randomizing the 16-bit Transaction ID (TXID) to race the legitimate authoritative answer.
+* **The Rule:** Stateful Similarity Tracker (`EXCEPT txid`).
+* **The Mitigation:** The proxy strips the randomized TXID from incoming responses and hashes the remaining payload. If 5 structurally identical responses are observed within a rolling 20-packet window, the circuit breaker trips, routing all subsequent forged guesses to the rate-limited queue and neutralizing the race condition.

@@ -1,3 +1,6 @@
+================================================
+FILE: handover/01-poc-architecture.md
+================================================
 # PoC Architecture
 
 The BOR-BOX Proof of Concept utilizes a containerized micro-network to simulate a real-world DNS resolution environment under heavy attack. 
@@ -9,14 +12,14 @@ The environment runs on a dedicated Docker bridge network (`bor-net` at `10.5.0.
 1. **DNS Resolver (10.5.0.10):** A lightweight CoreDNS server acting as the target.
 2. **BOR-BOX Proxy (10.5.0.20):** The security middlebox. All client and attacker traffic is routed here first.
 3. **Attacker (10.5.0.30):** A multi-threaded container dedicated to flooding the network with malicious traffic.
-4. **Client (10.5.0.40):** A benchmarking node generating legitimate queries (`www.example.com`) to measure availability and latency.
+4. **Client (10.5.0.40):** A benchmarking node generating legitimate queries to measure availability, latency, and integrity.
 
 ## The Dual-Queue Engine
 
 To adhere to the "Availability First" design philosophy (zero hard drops), the BOR-BOX proxy implements a hybrid queueing system:
 
 * **High-Priority Queue:** Traffic that passes all security rules is forwarded immediately to the upstream resolver.
-* **Rate-Limited Queue:** Traffic matching malicious signatures or volumetric thresholds is shunted to an asynchronous queue processed at a strict maximum of 10 QPS. 
+* **Rate-Limited Queue:** Traffic matching malicious signatures, volumetric thresholds, or stateful similarity tracks is shunted to an asynchronous queue processed at a strict maximum of 10 QPS. 
 
 ## Concurrency Limiting
 
