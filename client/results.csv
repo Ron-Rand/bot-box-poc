@@ -1,176 +1,163 @@
 timestamp,scenario,success,rtt_ms,outcome
-0.0,1. Baseline,True,147.97,Clean
-0.184,1. Baseline,True,151.41,Clean
-0.37,1. Baseline,True,128.96,Clean
-0.543,1. Baseline,True,120.22,Clean
-0.699,1. Baseline,True,134.52,Clean
-0.875,1. Baseline,True,121.14,Clean
-1.033,1. Baseline,True,118.19,Clean
-1.186,1. Baseline,True,128.11,Clean
-1.369,1. Baseline,True,179.31,Clean
-1.597,1. Baseline,True,125.77,Clean
-1.758,1. Baseline,True,120.02,Clean
-1.916,1. Baseline,True,141.07,Clean
-2.101,1. Baseline,True,123.94,Clean
-2.26,1. Baseline,True,183.52,Clean
-2.483,1. Baseline,True,119.79,Clean
-2.637,1. Baseline,True,121.79,Clean
-2.794,1. Baseline,True,119.33,Clean
-2.947,1. Baseline,True,149.32,Clean
-3.133,1. Baseline,True,121.13,Clean
-3.296,1. Baseline,True,122.71,Clean
-3.454,1. Baseline,True,120.12,Clean
-3.609,1. Baseline,True,121.38,Clean
-3.766,1. Baseline,True,121.23,Clean
-3.921,1. Baseline,True,118.14,Clean
-4.076,1. Baseline,True,118.69,Clean
-4.234,1. Baseline,True,125.49,Clean
-4.403,1. Baseline,True,158.07,Clean
-4.601,1. Baseline,True,134.65,Clean
-4.799,1. Baseline,True,128.14,Clean
-4.985,1. Baseline,True,122.39,Clean
-5.157,1. Baseline,True,130.34,Clean
-5.339,1. Baseline,True,148.52,Clean
-5.524,1. Baseline,True,121.44,Clean
-5.686,1. Baseline,True,127.09,Clean
-5.848,1. Baseline,True,133.55,Clean
-6.022,1. Baseline,True,121.02,Clean
-6.179,1. Baseline,True,129.02,Clean
-6.352,1. Baseline,True,123.26,Clean
-6.509,1. Baseline,True,121.79,Clean
-6.666,1. Baseline,True,135.76,Clean
-6.838,1. Baseline,True,128.95,Clean
-7.006,1. Baseline,True,125.15,Clean
-7.175,1. Baseline,True,123.68,Clean
-7.334,1. Baseline,True,126.38,Clean
-7.502,1. Baseline,True,120.83,Clean
-7.657,1. Baseline,True,118.3,Clean
-7.81,1. Baseline,True,134.45,Clean
-7.997,1. Baseline,True,132.5,Clean
-8.166,1. Baseline,True,121.58,Clean
-8.322,1. Baseline,True,127.81,Clean
-8.486,1. Baseline,True,128.32,Clean
-8.648,1. Baseline,True,122.25,Clean
-8.805,1. Baseline,True,120.69,Clean
-8.96,1. Baseline,True,123.77,Clean
-9.125,1. Baseline,True,120.05,Clean
-9.279,1. Baseline,True,123.06,Clean
-9.437,1. Baseline,True,120.58,Clean
-9.593,1. Baseline,True,120.93,Clean
-9.752,1. Baseline,True,120.43,Clean
-9.907,1. Baseline,True,123.04,Clean
-10.069,1. Baseline,True,120.15,Clean
-10.226,1. Baseline,True,123.4,Clean
-10.386,1. Baseline,True,120.08,Clean
-10.543,1. Baseline,True,125.73,Clean
-10.705,1. Baseline,True,127.74,Clean
-10.869,1. Baseline,True,124.37,Clean
-11.338,1. Baseline,True,246.98,Clean
-11.895,1. Baseline,True,140.91,Clean
+0.0,1. Baseline,True,130.43,Clean
+0.167,1. Baseline,True,125.9,Clean
+0.328,1. Baseline,True,119.21,Clean
+0.483,1. Baseline,True,135.99,Clean
+0.657,1. Baseline,True,140.0,Clean
+0.843,1. Baseline,True,143.26,Clean
+1.024,1. Baseline,True,142.48,Clean
+1.203,1. Baseline,True,127.95,Clean
+1.369,1. Baseline,True,132.09,Clean
+1.538,1. Baseline,True,136.56,Clean
+1.717,1. Baseline,True,123.29,Clean
+1.881,1. Baseline,True,120.48,Clean
+2.036,1. Baseline,True,126.9,Clean
+2.213,1. Baseline,True,133.45,Clean
+2.386,1. Baseline,True,130.77,Clean
+2.558,1. Baseline,True,127.25,Clean
+2.721,1. Baseline,True,128.37,Clean
+2.886,1. Baseline,True,142.2,Clean
+3.066,1. Baseline,True,122.82,Clean
+3.227,1. Baseline,True,125.99,Clean
+3.39,1. Baseline,True,132.49,Clean
+3.583,1. Baseline,True,130.15,Clean
+3.761,1. Baseline,True,128.69,Clean
+3.926,1. Baseline,True,130.27,Clean
+4.093,1. Baseline,True,133.97,Clean
+4.264,1. Baseline,True,133.02,Clean
+4.438,1. Baseline,True,134.19,Clean
+4.61,1. Baseline,True,125.06,Clean
+4.77,1. Baseline,True,121.31,Clean
+4.928,1. Baseline,True,130.6,Clean
+5.099,1. Baseline,True,139.92,Clean
+5.278,1. Baseline,True,131.35,Clean
+5.446,1. Baseline,True,125.51,Clean
+5.607,1. Baseline,True,128.89,Clean
+5.774,1. Baseline,True,128.88,Clean
+5.939,1. Baseline,True,133.16,Clean
+6.118,1. Baseline,True,135.82,Clean
+6.291,1. Baseline,True,129.03,Clean
+6.458,1. Baseline,True,133.93,Clean
+6.629,1. Baseline,True,135.06,Clean
+6.815,1. Baseline,True,132.43,Clean
+6.985,1. Baseline,True,130.36,Clean
+7.157,1. Baseline,True,183.83,Clean
+7.38,1. Baseline,True,129.2,Clean
+7.554,1. Baseline,True,139.95,Clean
+7.735,1. Baseline,True,130.67,Clean
+7.904,1. Baseline,True,142.37,Clean
+8.083,1. Baseline,True,130.49,Clean
+8.257,1. Baseline,True,142.02,Clean
+8.443,1. Baseline,True,148.13,Clean
+8.634,1. Baseline,True,134.37,Clean
+8.807,1. Baseline,True,131.38,Clean
+8.975,1. Baseline,True,131.01,Clean
+9.146,1. Baseline,True,129.76,Clean
+9.313,1. Baseline,True,137.57,Clean
+9.496,1. Baseline,True,148.85,Clean
+9.69,1. Baseline,True,177.5,Clean
+9.906,1. Baseline,True,136.93,Clean
+10.08,1. Baseline,True,132.44,Clean
+10.25,1. Baseline,True,134.84,Clean
+10.423,1. Baseline,True,121.22,Clean
+10.58,1. Baseline,True,129.55,Clean
+10.746,1. Baseline,True,126.3,Clean
+10.91,1. Baseline,True,129.36,Clean
+11.08,1. Baseline,True,121.72,Clean
+11.238,1. Baseline,True,129.75,Clean
+11.404,1. Baseline,True,123.93,Clean
+11.564,1. Baseline,True,119.77,Clean
+11.719,1. Baseline,True,120.62,Clean
+11.875,1. Baseline,True,119.56,Clean
 0.0,2. Attack (No BOR-BOX),False,250.0,Timeout
-0.284,2. Attack (No BOR-BOX),False,87.54,Poisoned
-0.407,2. Attack (No BOR-BOX),False,144.63,Poisoned
-0.586,2. Attack (No BOR-BOX),False,250.0,Timeout
-0.87,2. Attack (No BOR-BOX),False,88.8,Poisoned
-0.993,2. Attack (No BOR-BOX),False,122.12,Poisoned
-1.149,2. Attack (No BOR-BOX),False,117.71,Poisoned
-1.301,2. Attack (No BOR-BOX),False,95.21,Poisoned
-1.431,2. Attack (No BOR-BOX),False,69.39,Poisoned
-1.541,2. Attack (No BOR-BOX),False,126.62,Poisoned
-1.701,2. Attack (No BOR-BOX),False,68.05,Poisoned
-1.803,2. Attack (No BOR-BOX),False,99.54,Poisoned
-1.937,2. Attack (No BOR-BOX),False,250.0,Timeout
-2.222,2. Attack (No BOR-BOX),True,186.89,Clean
-2.444,2. Attack (No BOR-BOX),False,178.0,Poisoned
-2.656,2. Attack (No BOR-BOX),False,250.0,Timeout
-2.94,2. Attack (No BOR-BOX),False,117.42,Poisoned
-3.091,2. Attack (No BOR-BOX),False,250.0,Timeout
-3.377,2. Attack (No BOR-BOX),False,250.0,Timeout
-3.662,2. Attack (No BOR-BOX),False,250.0,Timeout
-3.947,2. Attack (No BOR-BOX),False,250.0,Timeout
-4.232,2. Attack (No BOR-BOX),False,119.15,Poisoned
-4.385,2. Attack (No BOR-BOX),False,103.29,Poisoned
-4.523,2. Attack (No BOR-BOX),False,224.48,Poisoned
-4.781,2. Attack (No BOR-BOX),False,250.0,Timeout
-5.066,2. Attack (No BOR-BOX),False,250.0,Timeout
-5.374,2. Attack (No BOR-BOX),False,195.03,Poisoned
-5.605,2. Attack (No BOR-BOX),False,181.1,Poisoned
-5.821,2. Attack (No BOR-BOX),False,192.19,Poisoned
-6.047,2. Attack (No BOR-BOX),False,250.0,Timeout
-6.333,2. Attack (No BOR-BOX),True,182.87,Clean
-6.55,2. Attack (No BOR-BOX),False,155.46,Poisoned
-6.741,2. Attack (No BOR-BOX),False,214.47,Poisoned
-6.991,2. Attack (No BOR-BOX),True,202.47,Clean
-7.228,2. Attack (No BOR-BOX),False,250.0,Timeout
-7.514,2. Attack (No BOR-BOX),False,107.08,Poisoned
-7.657,2. Attack (No BOR-BOX),True,245.58,Clean
-7.94,2. Attack (No BOR-BOX),False,227.15,Poisoned
-8.201,2. Attack (No BOR-BOX),False,250.0,Timeout
-8.496,2. Attack (No BOR-BOX),False,72.21,Poisoned
-8.602,2. Attack (No BOR-BOX),False,250.0,Timeout
-8.887,2. Attack (No BOR-BOX),False,250.0,Timeout
-9.172,2. Attack (No BOR-BOX),False,107.75,Poisoned
-9.313,2. Attack (No BOR-BOX),False,250.0,Timeout
-9.598,2. Attack (No BOR-BOX),False,105.03,Poisoned
-9.737,2. Attack (No BOR-BOX),False,96.85,Poisoned
-9.868,2. Attack (No BOR-BOX),False,65.07,Poisoned
-9.969,2. Attack (No BOR-BOX),True,199.67,Clean
-10.203,2. Attack (No BOR-BOX),False,250.0,Timeout
-10.489,2. Attack (No BOR-BOX),False,55.33,Poisoned
-10.579,2. Attack (No BOR-BOX),False,250.0,Timeout
-10.866,2. Attack (No BOR-BOX),False,169.1,Poisoned
-11.069,2. Attack (No BOR-BOX),False,81.68,Poisoned
-11.185,2. Attack (No BOR-BOX),False,77.8,Poisoned
-11.296,2. Attack (No BOR-BOX),False,86.01,Poisoned
-11.416,2. Attack (No BOR-BOX),False,128.6,Poisoned
-11.579,2. Attack (No BOR-BOX),False,121.05,Poisoned
-11.735,2. Attack (No BOR-BOX),False,250.0,Timeout
-0.0,3. Attack (BOR-BOX Active),True,200.9,Clean
-0.239,3. Attack (BOR-BOX Active),False,250.0,Timeout
-0.524,3. Attack (BOR-BOX Active),False,250.0,Timeout
-0.814,3. Attack (BOR-BOX Active),False,250.0,Timeout
-1.098,3. Attack (BOR-BOX Active),False,250.0,Timeout
-1.383,3. Attack (BOR-BOX Active),True,195.6,Clean
-1.613,3. Attack (BOR-BOX Active),False,250.0,Timeout
-1.898,3. Attack (BOR-BOX Active),True,195.33,Clean
-2.128,3. Attack (BOR-BOX Active),True,224.63,Clean
-2.387,3. Attack (BOR-BOX Active),False,250.0,Timeout
-2.672,3. Attack (BOR-BOX Active),False,250.0,Timeout
-2.957,3. Attack (BOR-BOX Active),False,250.0,Timeout
-3.242,3. Attack (BOR-BOX Active),False,250.0,Timeout
-3.527,3. Attack (BOR-BOX Active),False,250.0,Timeout
-3.812,3. Attack (BOR-BOX Active),False,250.0,Timeout
-4.098,3. Attack (BOR-BOX Active),False,250.0,Timeout
-4.383,3. Attack (BOR-BOX Active),True,26.63,Clean
-4.444,3. Attack (BOR-BOX Active),False,250.0,Timeout
-4.768,3. Attack (BOR-BOX Active),True,141.45,Clean
-4.956,3. Attack (BOR-BOX Active),True,124.3,Clean
-5.115,3. Attack (BOR-BOX Active),False,250.0,Timeout
-5.4,3. Attack (BOR-BOX Active),True,207.59,Clean
-5.642,3. Attack (BOR-BOX Active),False,250.0,Timeout
-5.93,3. Attack (BOR-BOX Active),True,1.8,Clean
-5.969,3. Attack (BOR-BOX Active),True,209.48,Clean
-6.213,3. Attack (BOR-BOX Active),True,1.23,Clean
-6.248,3. Attack (BOR-BOX Active),True,159.2,Clean
-6.441,3. Attack (BOR-BOX Active),False,250.0,Timeout
-6.726,3. Attack (BOR-BOX Active),True,196.2,Clean
-6.957,3. Attack (BOR-BOX Active),False,250.0,Timeout
-7.241,3. Attack (BOR-BOX Active),True,195.18,Clean
-7.471,3. Attack (BOR-BOX Active),False,250.0,Timeout
-7.756,3. Attack (BOR-BOX Active),False,250.0,Timeout
-8.041,3. Attack (BOR-BOX Active),False,250.0,Timeout
-8.325,3. Attack (BOR-BOX Active),False,250.0,Timeout
-8.61,3. Attack (BOR-BOX Active),True,212.96,Clean
-8.858,3. Attack (BOR-BOX Active),False,250.0,Timeout
-9.143,3. Attack (BOR-BOX Active),True,213.3,Clean
-9.39,3. Attack (BOR-BOX Active),False,250.0,Timeout
-9.694,3. Attack (BOR-BOX Active),True,187.07,Clean
-9.943,3. Attack (BOR-BOX Active),True,151.06,Clean
-10.131,3. Attack (BOR-BOX Active),True,179.38,Clean
-10.345,3. Attack (BOR-BOX Active),True,173.49,Clean
-10.552,3. Attack (BOR-BOX Active),True,177.64,Clean
-10.764,3. Attack (BOR-BOX Active),False,250.0,Timeout
-11.058,3. Attack (BOR-BOX Active),False,250.0,Timeout
-11.342,3. Attack (BOR-BOX Active),True,186.47,Clean
-11.563,3. Attack (BOR-BOX Active),False,250.0,Timeout
-11.848,3. Attack (BOR-BOX Active),False,250.0,Timeout
+0.284,2. Attack (No BOR-BOX),False,250.0,Timeout
+0.569,2. Attack (No BOR-BOX),False,250.0,Timeout
+0.854,2. Attack (No BOR-BOX),False,250.0,Timeout
+1.14,2. Attack (No BOR-BOX),False,250.0,Timeout
+1.425,2. Attack (No BOR-BOX),False,250.0,Timeout
+1.709,2. Attack (No BOR-BOX),False,250.0,Timeout
+1.993,2. Attack (No BOR-BOX),False,250.0,Timeout
+2.28,2. Attack (No BOR-BOX),False,250.0,Timeout
+2.565,2. Attack (No BOR-BOX),False,250.0,Timeout
+2.849,2. Attack (No BOR-BOX),False,250.0,Timeout
+3.136,2. Attack (No BOR-BOX),False,250.0,Timeout
+3.422,2. Attack (No BOR-BOX),False,250.0,Timeout
+3.707,2. Attack (No BOR-BOX),False,250.0,Timeout
+3.991,2. Attack (No BOR-BOX),False,250.0,Timeout
+4.276,2. Attack (No BOR-BOX),False,250.0,Timeout
+4.56,2. Attack (No BOR-BOX),False,250.0,Timeout
+4.845,2. Attack (No BOR-BOX),False,250.0,Timeout
+5.129,2. Attack (No BOR-BOX),False,250.0,Timeout
+5.414,2. Attack (No BOR-BOX),False,250.0,Timeout
+5.698,2. Attack (No BOR-BOX),False,250.0,Timeout
+5.985,2. Attack (No BOR-BOX),False,250.0,Timeout
+6.269,2. Attack (No BOR-BOX),False,250.0,Timeout
+6.554,2. Attack (No BOR-BOX),False,250.0,Timeout
+6.838,2. Attack (No BOR-BOX),False,250.0,Timeout
+7.123,2. Attack (No BOR-BOX),False,250.0,Timeout
+7.408,2. Attack (No BOR-BOX),False,250.0,Timeout
+7.692,2. Attack (No BOR-BOX),False,250.0,Timeout
+7.977,2. Attack (No BOR-BOX),False,250.0,Timeout
+8.262,2. Attack (No BOR-BOX),False,250.0,Timeout
+8.547,2. Attack (No BOR-BOX),False,250.0,Timeout
+8.832,2. Attack (No BOR-BOX),False,250.0,Timeout
+9.116,2. Attack (No BOR-BOX),False,250.0,Timeout
+9.401,2. Attack (No BOR-BOX),False,250.0,Timeout
+9.685,2. Attack (No BOR-BOX),False,250.0,Timeout
+9.969,2. Attack (No BOR-BOX),False,250.0,Timeout
+10.254,2. Attack (No BOR-BOX),False,250.0,Timeout
+10.538,2. Attack (No BOR-BOX),False,250.0,Timeout
+10.822,2. Attack (No BOR-BOX),False,250.0,Timeout
+11.106,2. Attack (No BOR-BOX),False,250.0,Timeout
+11.391,2. Attack (No BOR-BOX),False,250.0,Timeout
+11.675,2. Attack (No BOR-BOX),False,250.0,Timeout
+11.964,2. Attack (No BOR-BOX),False,250.0,Timeout
+0.0,3. Attack (BOR-BOX Active),True,138.86,Clean
+0.175,3. Attack (BOR-BOX Active),True,159.05,Clean
+0.368,3. Attack (BOR-BOX Active),True,148.9,Clean
+0.553,3. Attack (BOR-BOX Active),False,250.0,Timeout
+0.837,3. Attack (BOR-BOX Active),False,250.0,Timeout
+1.124,3. Attack (BOR-BOX Active),False,250.0,Timeout
+1.409,3. Attack (BOR-BOX Active),False,250.0,Timeout
+1.693,3. Attack (BOR-BOX Active),False,250.0,Timeout
+1.978,3. Attack (BOR-BOX Active),False,250.0,Timeout
+2.262,3. Attack (BOR-BOX Active),False,250.0,Timeout
+2.547,3. Attack (BOR-BOX Active),False,250.0,Timeout
+2.836,3. Attack (BOR-BOX Active),True,156.44,Clean
+3.027,3. Attack (BOR-BOX Active),True,165.88,Clean
+3.229,3. Attack (BOR-BOX Active),True,185.12,Clean
+3.449,3. Attack (BOR-BOX Active),True,171.35,Clean
+3.655,3. Attack (BOR-BOX Active),False,250.0,Timeout
+3.939,3. Attack (BOR-BOX Active),False,250.0,Timeout
+4.223,3. Attack (BOR-BOX Active),True,180.29,Clean
+4.441,3. Attack (BOR-BOX Active),False,250.0,Timeout
+4.729,3. Attack (BOR-BOX Active),True,154.16,Clean
+4.918,3. Attack (BOR-BOX Active),False,250.0,Timeout
+5.204,3. Attack (BOR-BOX Active),False,250.0,Timeout
+5.489,3. Attack (BOR-BOX Active),True,176.12,Clean
+5.7,3. Attack (BOR-BOX Active),False,250.0,Timeout
+5.985,3. Attack (BOR-BOX Active),False,250.0,Timeout
+6.273,3. Attack (BOR-BOX Active),True,202.55,Clean
+6.511,3. Attack (BOR-BOX Active),True,173.82,Clean
+6.719,3. Attack (BOR-BOX Active),False,250.0,Timeout
+7.004,3. Attack (BOR-BOX Active),False,250.0,Timeout
+7.288,3. Attack (BOR-BOX Active),True,160.7,Clean
+7.483,3. Attack (BOR-BOX Active),False,250.0,Timeout
+7.768,3. Attack (BOR-BOX Active),False,250.0,Timeout
+8.054,3. Attack (BOR-BOX Active),False,250.0,Timeout
+8.338,3. Attack (BOR-BOX Active),True,171.09,Clean
+8.544,3. Attack (BOR-BOX Active),False,250.0,Timeout
+8.83,3. Attack (BOR-BOX Active),True,170.83,Clean
+9.035,3. Attack (BOR-BOX Active),False,250.0,Timeout
+9.321,3. Attack (BOR-BOX Active),True,167.9,Clean
+9.524,3. Attack (BOR-BOX Active),False,250.0,Timeout
+9.808,3. Attack (BOR-BOX Active),False,250.0,Timeout
+10.094,3. Attack (BOR-BOX Active),False,250.0,Timeout
+10.38,3. Attack (BOR-BOX Active),True,163.32,Clean
+10.577,3. Attack (BOR-BOX Active),True,164.97,Clean
+10.777,3. Attack (BOR-BOX Active),True,162.27,Clean
+10.973,3. Attack (BOR-BOX Active),False,250.0,Timeout
+11.258,3. Attack (BOR-BOX Active),True,178.91,Clean
+11.473,3. Attack (BOR-BOX Active),True,162.99,Clean
+11.67,3. Attack (BOR-BOX Active),True,163.85,Clean
+11.868,3. Attack (BOR-BOX Active),True,163.93,Clean

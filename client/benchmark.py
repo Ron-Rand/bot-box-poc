@@ -28,7 +28,6 @@ def run_benchmark(duration_sec=12, qps=30, output_csv="results.csv", scenario_la
         t0 = time.time()
         elapsed_rel = t0 - start_epoch
         msg = dns.message.make_query("target-banking.example.com.", dns.rdatatype.A)
-        # Force the client into the Fishbowl guessing space
         msg.id = random.randint(1, 250)
         
         success = False
@@ -82,7 +81,7 @@ def generate_charts(csv_file="results.csv", output_dir="/app/charts"):
     os.makedirs(output_dir, exist_ok=True)
     df = pd.read_csv(csv_file)
     
-    # 1. Integrity Stacked Bar Chart
+    # 1. Integrity Stacked Bar Chart (Cache Poisoning)
     plt.figure(figsize=(9, 6))
     outcomes = df.groupby(['scenario', 'outcome']).size().unstack(fill_value=0)
     for col in ['Clean', 'Poisoned', 'Timeout']:
@@ -102,26 +101,57 @@ def generate_charts(csv_file="results.csv", output_dir="/app/charts"):
     plt.savefig(f"{output_dir}/slide_chart1_integrity.png", dpi=300)
     plt.close()
     
-    # 2. Latency Line Chart
+    # 2. Availability Bar Chart (TuDoor CPU-Exhaustion)
+    plt.figure(figsize=(8, 5))
+    grouped_success = df.groupby("scenario", sort=False)["success"].mean() * 100
+    colors_avail = ['#2ca02c' if 'BOR-BOX Active' in s or 'Baseline' in s else '#d62728' for s in grouped_success.index]
+    ax2 = grouped_success.plot(kind='bar', color=colors_avail, edgecolor='black', width=0.45)
+    plt.title("Resolver Availability (% Legitimate Queries Answered)", fontsize=13, fontweight='bold')
+    plt.ylabel("Success Rate (%)", fontsize=11)
+    plt.xlabel("Scenario", fontsize=11)
+    plt.ylim(0, 115)
+    plt.xticks(rotation=10)
+    plt.grid(axis='y', linestyle='--', alpha=0.7)
+    for p in ax2.patches:
+        ax2.annotate(f"{p.get_height():.1f}%", (p.get_x() + p.get_width() / 2., p.get_height() + 2),
+                    ha='center', va='bottom', fontsize=10, fontweight='bold')
+    plt.tight_layout()
+    plt.savefig(f"{output_dir}/slide_chart2_availability.png", dpi=300)
+    plt.close()
+
+    # 3. Latency Jitter Box Plot (TuDoor CPU-Exhaustion)
+    df.boxplot(column='rtt_ms', by='scenario', figsize=(9, 6), patch_artist=True,
+               boxprops=dict(facecolor='#1f77b4', color='black'),
+               medianprops=dict(color='red', linewidth=2))
+    plt.title("Legitimate Query Latency Jitter (ms)", fontsize=13, fontweight='bold')
+    plt.suptitle("")
+    plt.ylabel("Round Trip Time / RTT (ms)", fontsize=11)
+    plt.xlabel("Scenario", fontsize=11)
+    plt.xticks(rotation=10)
+    plt.tight_layout()
+    plt.savefig(f"{output_dir}/slide_chart3_latency_box.png", dpi=300)
+    plt.close()
+
+    # 4. Latency Line Chart
     plt.figure(figsize=(9, 5))
     for scenario, group in df.groupby("scenario", sort=False):
         plt.plot(group["timestamp"], group["rtt_ms"], label=scenario, alpha=0.85, linewidth=2)
-        
     plt.title("Legitimate Query Latency (ms)", fontsize=13, fontweight='bold')
     plt.xlabel("Test Duration (Seconds)", fontsize=11)
     plt.ylabel("Round Trip Time / RTT (ms)", fontsize=11)
     plt.legend(loc="upper right")
     plt.grid(True, linestyle='--', alpha=0.7)
     plt.tight_layout()
-    plt.savefig(f"{output_dir}/slide_chart2_latency.png", dpi=300)
+    plt.savefig(f"{output_dir}/slide_chart4_latency_line.png", dpi=300)
     plt.close()
     
-    # 3. Outcome Scatter Plot
+    # 5. Outcome Scatter Plot
     fig, axes = plt.subplots(3, 1, figsize=(10, 8), sharex=True, sharey=True)
     colors_map = {'Clean': '#2ca02c', 'Poisoned': '#d62728', 'Timeout': '#7f7f7f'}
     markers_map = {'Clean': 'o', 'Poisoned': 'X', 'Timeout': 's'}
     
     for i, scenario in enumerate(df['scenario'].unique()):
+        if i >= 3: break
         subset = df[df['scenario'] == scenario]
         for outcome in ['Clean', 'Poisoned', 'Timeout']:
             out_sub = subset[subset['outcome'] == outcome]
@@ -137,10 +167,10 @@ def generate_charts(csv_file="results.csv", output_dir="/app/charts"):
     plt.xlabel("Test Duration (Seconds)")
     fig.text(0.04, 0.5, 'RTT (ms)', va='center', rotation='vertical')
     plt.tight_layout(rect=[0.05, 0, 1, 1])
-    plt.savefig(f"{output_dir}/slide_chart3_scatter.png", dpi=300)
+    plt.savefig(f"{output_dir}/slide_chart5_scatter.png", dpi=300)
     plt.close()
     
-    print(f"[✓] Charts generated successfully in {output_dir}/")
+    print(f"[✓] 5 Charts generated successfully in {output_dir}/")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

